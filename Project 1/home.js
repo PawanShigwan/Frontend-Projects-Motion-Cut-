@@ -12,7 +12,7 @@ document.querySelector('.dropbtn').addEventListener('click', function(event) {
     event.stopPropagation();
     const dropdownContent = document.querySelector('.dropdown-content');
     dropdownContent.classList.toggle('show');
-    this.classList.toggle('active');  // Toggle the active class to rotate the arrow
+    this.classList.toggle('active');  
 });
 
 document.querySelectorAll('.dropdown-content a').forEach(item => {
@@ -58,7 +58,7 @@ function changePlaceholder() {
     placeholderIndex = (placeholderIndex + 1) % placeholderText.length;
 }
 
-setInterval(changePlaceholder, 3000);  // Change every 3 seconds
+setInterval(changePlaceholder, 3000);  
 
 // Display loader on search button click
 document.querySelector('.search-button').addEventListener('click', () => {
