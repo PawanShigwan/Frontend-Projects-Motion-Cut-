@@ -1,0 +1,378 @@
+/* Base Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9; /* Light background for contrast */
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #212121; /* Dark navigation bar */
+    color: white;
+}
+
+nav .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav .search-bar {
+    padding: 0.5rem;
+    border-radius: 5px;
+    border: none;
+    width: 300px;
+    transition: border 0.3s;
+}
+
+nav .search-bar:focus {
+    outline: none;
+    border: 2px solid #ffa41c; /* Border color on focus */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ffa41c; /* Color on hover */
+}
+
+/* Product Details */
+.product-details {
+    display: flex;
+    padding: 2rem;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin: 2rem; /* Add margin for spacing */
+}
+
+.product-gallery {
+    flex: 1;
+}
+
+.main-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px; /* Rounded corners */
+}
+
+.thumbnail-gallery {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.thumbnail {
+    width: 60px;
+    height: 60px;
+    margin: 0 0.5rem;
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: border-color 0.3s;
+}
+
+.thumbnail:hover {
+    border-color: #ffa41c; /* Highlight on hover */
+}
+
+.product-info {
+    flex: 1;
+    padding: 0 2rem;
+}
+
+.product-info h1 {
+    margin: 0;
+    color: #333; /* Darker text for title */
+    font-weight: 700; /* Bold title */
+}
+
+.product-info .price {
+    font-size: 1.5em;
+    color: #ff5722; /* Bright price color */
+    font-weight: bold; /* Bold price */
+}
+
+.product-info .description {
+    margin: 1rem 0;
+    color: #555; /* Darker description */
+}
+
+.add-to-cart {
+    padding: 0.5rem 1rem;
+    margin-top: 1rem;
+    cursor: pointer;
+    background-color: #ff6600; /* Diwali themed button color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.add-to-cart:hover {
+    background-color: #cc5200; /* Darker shade on hover */
+    transform: scale(1.05); /* Slightly enlarge button */
+}
+
+/* Customer Reviews */
+.customer-reviews {
+    padding: 2rem;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin: 2rem; /* Add margin for spacing */
+}
+
+.customer-reviews h2 {
+    margin-top: 0;
+    color: #333;
+}
+
+.reviews-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1rem;
+}
+
+.review-card {
+    background: #f9f9f9; /* Lighter background for review cards */
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+}
+
+.review-card p {
+    margin: 0.5rem 0;
+}
+
+.review-form {
+    margin-top: 2rem;
+}
+
+.review-form input,
+.review-form textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.review-form #review-file {
+    margin-top: 1rem;
+}
+
+.rating {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 1rem;
+}
+
+.star {
+    font-size: 24px;
+    cursor: pointer;
+    color: #ccc; /* Default star color */
+}
+
+.star.filled {
+    color: #ffa41c; /* Filled star color */
+}
+
+/* Related Products */
+.related-products {
+    padding: 2rem;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin: 2rem; /* Add margin for spacing */
+}
+
+.related-products h2 {
+    margin-top: 0;
+    color: #333;
+}
+
+.related-grid {
+    display: inline-flex;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1rem;
+}
+
+.product-card {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 1rem;
+    text-align: center;
+    background-color: #f9f9f9; /* Light background for cards */
+}
+
+.product-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px; /* Rounded corners */
+}
+
+/* Newsletter Section */
+.newsletter {
+    padding: 2rem;
+    background-color: #ffa41c; /* Bright background */
+    color: white;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.newsletter input {
+    padding: 0.5rem;
+    border-radius: 5px;
+    border: none;
+    width: 200px; /* Fixed width for input */
+}
+
+#subscribe {
+    padding: 0.75rem 1.5rem;
+    margin-top: 1rem;
+    cursor: pointer;
+    background-color: #212121; /* Dark button color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+#subscribe:hover {
+    background-color: #ff5722; /* Brighten on hover */
+}
+
+/* Back to Top Button */
+#back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 0.5rem 1rem;
+    background-color: #212121; /* Button color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none; /* Hidden by default */
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #212121; /* Footer color */
+    color: white;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .product-details {
+        flex-direction: column; /* Stack product details on smaller screens */
+    }
+
+    .product-info {
+        padding: 1rem; /* Reduce padding */
+    }
+
+    .related-grid {
+        grid-template-columns: 1fr; /* Single column layout for related products */
+    }
+}
+
+/* Additional Styles */
+.product-info .about-item {
+    margin: 0.5rem 0;
+    font-size: 1em;
+    color: #555;
+}
+
+.payment-options {
+    margin: 1rem 0;
+}
+
+.payment-logo {
+    width: 50px; /* Adjust size as necessary */
+    height: auto;
+    margin-right: 0.5rem;
+}
+
+.offers {
+    background-color: #eaeaea; /* Light background for offers */
+    padding: 1rem;
+    border-radius: 5px;
+    margin: 1rem 0;
+}
+
+.offers h3 {
+    margin: 0 0 0.5rem 0;
+}
+
+.item-info {
+    margin: 1rem 0;
+}
+
+.dotted-list {
+    list-style-type: disc; /* Change to 'circle' or 'square' if preferred */
+    padding-left: 20px; /* Indent the list */
+    color: #333; /* Darker text color for readability */
+}
+
+.dotted-list li {
+    margin-bottom: 0.5rem; /* Space between list items */
+}
+
+button {
+    padding: 0.5rem 1rem;
+    margin-top: 1rem;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.2s; /* Smooth transition */
+}
+
+.add-to-cart {
+    background-color: #28a745; /* Green */
+    color: white;
+}
+
+.buy-now {
+    padding: 0.5rem 1rem;
+    margin-top: 0.5rem; /* Added margin for spacing */
+    cursor: pointer;
+    background-color: #007bff; /* Buy Now button color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.submit-review {
+    background-color: #ffc107; /* Yellow */
+    color: black;
+}
+
+.submit-review:hover,
+.add-to-cart:hover,
+.buy-now:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+    transform: scale(1.05); /* Scale effect on hover */
+}

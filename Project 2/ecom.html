@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce Product Page</title>
+    <link rel="stylesheet" href="ecom.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="logo">E-Shop</div>
+        <input type="text" placeholder="Search for products..." class="search-bar">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Shop</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Account</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Product Section -->
+    <div class="product-details">
+        <div class="product-gallery">
+            <img src="product1.jpg" alt="Product Image" class="main-image" id="product-image">
+            <div class="thumbnail-gallery">
+                <img src="product2.jpg" alt="Thumbnail" class="thumbnail" onclick="changeImage(this)">
+                <img src="product3.jpg" alt="Thumbnail" class="thumbnail" onclick="changeImage(this)">
+                <img src="product4.jpg" alt="Thumbnail" class="thumbnail" onclick="changeImage(this)">
+            </div>
+        </div>
+        <div class="product-info">
+            <h1>Matrix Antique 2.0 Day & Date Softest Silicone Strap Analog Watch</h1>
+            <hr>
+            <p class="about-item">
+                Product details: 
+                Case diameter - 44 Millimetres, Band colour - Black, 
+                Band material type - Silicone, Warranty type - Manufacturer, 
+                Watch movement type - Quartz, Case thickness - 12 Millimetres, 
+                Country of Origin - India
+            </p>
+            <hr>
+            <p class="price" id="product-price">$99.99</p>
+            <hr>
+            <div class="item-info">
+                <h3>About This Item:</h3>
+                <ul class="dotted-list">
+                    <li>Dial: Brass Metal Dial With Silver Needles & Day & Date Feature</li>
+                    <li>Strap & Case: Softest Silicon Strap | Stainless Steel Case</li>
+                    <li>Machinery: Japanese Quartz Machinery With Original Sony Batteries Which Last More Than 2 Years</li>
+                    <li>Eco-friendly packaging</li>
+                    <li>100% satisfaction guarantee</li>
+                    <li>Other Features: Scratch Resistant Glass & Water Resistant Up to 1 M</li>
+                    <li>Warranty: 1 Year Manufacturing Warranty</li>
+                </ul>
+            </div>
+            <hr>
+            
+            <!-- Payment Options -->
+            <div class="payment-options">
+                <h3>Payment Options</h3>
+                <img src="visa icon.png" alt="Visa" class="payment-logo">
+                <img src="mastercard icon.png" alt="MasterCard" class="payment-logo">
+                <img src="paypal icon.png" alt="PayPal" class="payment-logo">
+                <img src="bhim icon.png" alt="Bhim" class="payment-logo">
+                <img src="gpay icon.png" alt="Gpay" class="payment-logo">
+            </div>
+            <hr>
+            
+            <!-- Available Offers -->
+            <div class="offers">
+                <h3>Available Offers</h3>
+                <p>Use code <strong>DIWALI2024</strong> to get 10% off on your next purchase!</p>
+                <p>Free shipping on orders over $50.</p>
+            </div>
+            <hr>
+        
+            <button class="add-to-cart">Add to Cart</button>
+            <button class="buy-now">Buy Now</button> <!-- New Buy Now button -->
+            <p class="trademark">&copy; 2024 E-Shop. All rights reserved.</p>
+        </div>
+    </div>
+
+    <!-- Customer Reviews -->
+    <section class="customer-reviews">
+        <h2>Customer Reviews</h2>
+        <div class="reviews-grid">
+            <div class="review-card">
+                <p><strong>John Doe</strong></p>
+                <p class="stars">⭐⭐⭐⭐⭐</p>
+                <p>Great product! Highly recommended.</p>
+            </div>
+            <div class="review-card">
+                <p><strong>Jane Smith</strong></p>
+                <p class="stars">⭐⭐⭐⭐</p>
+                <p>Good quality, worth the price.</p>
+            </div>
+        </div>
+        <div class="review-form">
+            <h3>Submit Your Review</h3>
+            <input type="text" placeholder="Your Name" id="review-name">
+            <textarea placeholder="Your Review" id="review-text"></textarea>
+            <input type="file" id="review-file" accept="image/*, .pdf">
+            <div class="rating" id="rating">
+                <span class="star" data-value="1">☆</span>
+                <span class="star" data-value="2">☆</span>
+                <span class="star" data-value="3">☆</span>
+                <span class="star" data-value="4">☆</span>
+                <span class="star" data-value="5">☆</span>
+            </div>
+            <button id="submit-review">Submit Review</button>
+        </div>
+    </section>
+
+    <!-- Related Products -->
+    <section class="related-products">
+        <h2>Related Products</h2>
+        <div class="related-grid">
+            <div class="product-card">
+                <img src="product5.jpg" alt="Related Product">
+                <p>Floral Print Dress</p>
+                <p>$49.56</p>
+            </div>
+            <div class="product-card">
+                <img src="product6.jpg" alt="Related Product">
+                <p>Casual Shirt</p>
+                <p>$59.54</p>
+            </div>
+            <div class="product-card">
+                <img src="product7.jpg" alt="Related Product">
+                <p>Boat Nirvana Ion</p>
+                <p>$65.12</p>
+            </div>
+            <div class="product-card">
+                <img src="product8.jpg" alt="Related Product">
+                <p>Oppo F27pro+ 5G</p>
+                <p>$75.79</p>
+            </div>
+            <div class="product-card">
+                <img src="product9.jpg" alt="Related Product">
+                <p>Wall1ders 12 Butterflies 3 Sizes Mirror Stickers (Silver), Mirror Stickers for Wall</p>
+                <p>$19.94</p>
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- Newsletter Signup -->
+    <section class="newsletter">
+        <h2>Subscribe to Our Newsletter</h2>
+        <input type="email" placeholder="Enter your email" id="newsletter-email">
+        <button id="subscribe">Subscribe</button>
+    </section>
+
+    <!-- Back-to-Top Button -->
+    <button id="back-to-top">↑</button>
+
+    <!-- Footer -->
+    <footer>
+        <div>© 2024 E-Shop. All rights reserved.</div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="ecom.js"></script>
+</body>
+</html>
